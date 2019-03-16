@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background: #f4f4f4;
+    background: rgb(120, 174, 196);
     color: #333;
     padding-top: 5px;
     min-height: 100px;
@@ -23,21 +23,21 @@ header{
     width: 100%;
 }
 
+
 .nav-link{
     color: #333;
     text-decoration: none;
     font-size: 18px;
 }
 
-.nav{
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item{
-    float: left;
-    display: inline;
-    padding: 0 10px 0 10px;
+section{
+    overflow: hidden;
+    height: 700px;
+    width: 900px;
+    margin-top:46px;
+    margin-left:270px;
+    background-color:rgb(248, 244, 244)
+   
 }
 
 .branding{
@@ -54,17 +54,11 @@ header nav{
     width: 100px;
 }
 
-.avatar{
-    margin-top: 50px;
-}
-
 .dp{
     border-radius: 50%;
     height: 30px;
     width: 30px;
 }
-
-
 
 .dropdown{
     padding-top: 15px;
@@ -92,9 +86,24 @@ header nav{
     display: block;
 }
 
+.search{ 
+
+    display:block;
+}
+.search input{
+    padding: 10px;
+    border-radius:15px;
+}
+.search button{
+    padding:7px 10px;
+    border-radius:10px;
+    color:green;
+}
+
+
 .sidenav {
     height: 100%; 
-    width: 15%; 
+    width: 20%; 
     position: fixed;
     z-index: 1; 
     top: 109px; 
@@ -124,6 +133,7 @@ header nav{
     margin-left: 45px;
 }
 
+
 .btn{
     border: none;
     cursor: pointer;
@@ -140,8 +150,8 @@ header nav{
 
 .container1{
     margin-top: 7%;
-    width: 75%;
-    margin-left: 204px;
+    width: 100%;
+    margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
     
@@ -149,41 +159,44 @@ header nav{
 
 .container2{
     margin-top: 0px;
-    width: 75%;
-    margin-left: 204px;
+    width: 100%;
+    margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
 
 .container3{
     margin-top: 0px;
-    width: 75%;
-    margin-left: 204px;
+    width: 100%;
+    margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
 
 .container4{
-    margin-top: 0.5px;
-    width: 75%;
-    margin-left: 204px;
+    margin-top: 0px;
+    width: 100%;
+    margin-left:0px;
     text-align: left;
     border: 1px  solid #f8cdcd;
 }
 
 .container5{
     margin-top: 0px;
-    width: 75%;
-    margin-left: 204px;
+    width: 100%;
+    margin-left: 0px;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
+
+
 
 .more-btn{
     border-radius: 6px;
     color: white;
     background: #2d77b7;
     margin-left: 10px;
+   overflow: auto;
 }
 
 .icon{
@@ -236,55 +249,56 @@ header nav{
     margin-left: 25%;
 }
 
-.ask-btn{
-    background-color: #2d77b7;
-    color: #fff;
-    border-radius: 8px;
-    padding: 5px 25px;
-    font-size: 18px;
-}
 
-@media only screen and (max-width: 850px){
-    .sidenav{
-        display: none;
-    }
-    .side-btn{
-        display: inline;
-    }
-    .display{
-        width: 18%;
-        display: block;
-        top: 85px;
-    }
+/* Add responsiveness for mobile devices */
+@media only screen and (min-width: 280px) and (max-width:480px) {
 
-}
-
-@media only screen and (max-width: 500px){
     header nav{
-        float: left;
+        float: right;
+      width: 100%;
+      padding: 5px 1px;
+      overflow: auto;
+    
     }
 
-    .container1{
-        margin-left: 5%;
-        width: 90%;
+
+    .sidenav {
+        height:90%; 
+        width:40%; 
+        z-index: 1;
+        top: 208px;  
+        left:2%;
+        border-right: 1px solid #f3aeae;
+        padding-top:2%;
     }
 
-    .question, .qn{
-        margin-left: 5px;
+    section{
+        overflow:auto;
+        height:50%;
+        width:55%;
+        margin-top:196px;
+        margin-left:42.2%;
+        background-color:rgb(248, 244, 244)
+       
     }
 
-    .btn{
-        margin-top: 0;
+    .search{ 
+
+        display:block;
+    }
+    .search input{
+        padding: 10px;
+        border-radius:15px;
+        width:42%
+    }
+    .search button{
+        padding:7px 10px;
+        border-radius:10px;
+        color:green;
     }
 
-    .display{
-        width: 100%;
-        display: block;
-        top: 145px;
-        background: #f9f9f9;
-    }
 
-    .ask{
-        margin-left: 10%;
-    }
+.dp{
+    border-radius: 100%;
+}
 }

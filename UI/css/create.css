@@ -12,7 +12,7 @@ body{
 }
 
 header{
-  background: #f4f4f4;
+  background:rgb(120, 174, 196);
   color: #333;
   padding-top: 5px;
   min-height: 100px;
@@ -35,7 +35,6 @@ header{
 }
 
 .nav-item{
-  float: left;
   display: inline;
   padding: 0 10px 0 10px;
 }
@@ -92,15 +91,41 @@ header nav{
   display: block;
 }
 
+.search{ 
+  margin-left: 5px;
+  display:block;
+}
+.search input{
+  padding: 10px;
+  border-radius:15px;
+}
+.search button{
+  padding:7px 10px;
+  border-radius:10px;
+  color:green;
+}
+
+
 .sidenav {
   height: 100%; 
-  width: 15%; 
+  width: 20%; 
   position: fixed;
   z-index: 1; 
   top: 109px; 
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+
+section{
+  overflow: hidden;
+  height: 700px;
+  width: 800px;
+  margin-top: 53px;
+  margin-left:270px;
+  background-color:rgb(248, 244, 244)
+ 
 }
 
 .sidenav a {
@@ -119,7 +144,7 @@ header nav{
   display: none;
 }
 
-.question{
+.user{
   margin-left: 45px;
 }
 
@@ -138,10 +163,10 @@ header nav{
 }
 
 .container1{
-  margin-top: 100px;
-  width: 50%;
+  margin-top: 56px;
+  width: 100%;
   height: 60px;
-  margin-left: 350px;
+  margin-left: 0px;
   text-align: left;
   border: 1px solid #f8cdcd;
   
@@ -149,8 +174,8 @@ header nav{
 
 .container2{
   margin-top: 0px;
-  width: 50%;
-  margin-left:350px;
+  width: 100%;
+  margin-left:0px;
   text-align: left;
   border: 1px solid #f8cdcd;
   height: 60px;
@@ -158,8 +183,8 @@ header nav{
 
 .container3{
   margin-top: 0px;
-  width:50%;
-  margin-left:350px;
+  width:100%;
+  margin-left:0px;
   text-align: left;
   border: 1px solid #f8cdcd;
   height: 60px;
@@ -167,8 +192,8 @@ header nav{
 
 .container4{
   margin-top: 0px;
-  width:50%;
-  margin-left:350px;
+  width:100%;
+  margin-left:0px;
   text-align: left;
   border: 1px  solid #f8cdcd;
   height: 60px;
@@ -176,19 +201,14 @@ header nav{
 
 .container5{
   margin-top: 0px;
-  width:50%;
-  margin-left:350px;
+  width:100%;
+  margin-left:0px;
   text-align: left;
   border: 1px solid #f8cdcd;
   height: 60px;
 }
 
-.more-btn{
-  border-radius: 6px;
-  color: white;
-  background: #2d77b7;
-  margin-left: 10px;
-}
+
 
 .icon{
   height: 30px;
@@ -246,7 +266,7 @@ header nav{
   border-radius: 8px;
   padding: 5px 25px;
   font-size: 18px;
-  margin-left: 350px;
+  margin-left: 0px;
 }
 /* Create a custom checkbox */
 .checkmark {
@@ -287,32 +307,78 @@ header nav{
 
 }
 
-@media only screen and (max-width: 500px){
+/* Add responsiveness for mobile devices */
+@media only screen and (min-width: 280px) and (max-width:480px) {
   header nav{
-      float: left;
+    float: right;
+  width: 100%;
+  padding: 5px 1px;
+  overflow: auto;
+
+}
+
+
+  .sidenav {
+      height:90%; 
+      width:40%; 
+      z-index: 1;
+      top: 208px;  
+      left:2%;
+      border-right: 1px solid #f3aeae;
+      padding-top:2%;
   }
 
-  .container1{
-      margin-left: 5%;
-      width: 90%;
+  section{
+      overflow:auto;
+      height:50%;
+      width:55%;
+      margin-top:100px;
+      margin-left:42.2%;
+      background-color:rgb(248, 244, 244)
+    
   }
 
-  .question, .qn{
-      margin-left: 5px;
+  .search{ 
+
+      display:block;
+  }
+  .search input{
+      padding: 10px;
+      border-radius:15px;
+      width:42%
+  }
+  .search button{
+      padding:7px 10px;
+      border-radius:10px;
+      color:green;
   }
 
-  .btn{
-      margin-top: 0;
-  }
 
-  .display{
-      width: 100%;
-      display: block;
-      top: 145px;
-      background: #f9f9f9;
+  .dp{
+  border-radius: 100%;
   }
-
-  .ask{
-      margin-left: 10%;
   }
+/* Add responsiveness for tablet device */
+@media only screen and (min-width:481px) and (max-width:780px) {
+  .sidenav {
+    height: 50%; 
+    width:38%; 
+    z-index: 1; 
+    left:5%;
+    border-right: 1px solid #a31818;
+    padding-top:1%;
+}
+  .search{ 
+    display:block;
+  }
+  .search input{
+    padding: 10px;
+    border-radius:15px;
+  }
+  .search button{
+    padding:7px 10px;
+    border-radius:10px;
+    color:green;
+  }
+  
 }
