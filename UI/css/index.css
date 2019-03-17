@@ -87,7 +87,7 @@ img.avatar {
     margin-top:2%;
     margin-left:1%;
     text-align: center;
-    height:300px;            
+    height:400px;            
     background-color: rgb(56, 53, 53);
   }
 
@@ -104,7 +104,7 @@ img.avatar {
 }
 
 /* Add responsiveness for mobile devices */
-@media only screen and (min-width: 481px) and (max-width:1024px) {
+@media only screen and (min-width: 481px) and (max-width:780px) {
   body {
       background-color:rgb(224, 240, 237);
   }
@@ -130,3 +130,5 @@ img.avatar {
   margin-left:1%;
   }
   }
+
+
