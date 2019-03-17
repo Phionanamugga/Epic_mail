@@ -325,7 +325,7 @@ header nav{
         height:50%;
         width:50%;
         margin-top:70px;
-        margin-left:20%;
+        margin-left:10%;
         background-color:rgb(248, 244, 244)
     }
 
@@ -336,5 +336,26 @@ header nav{
         text-align: left;
         border: 1px solid #f8cdcd;
         
+    }
+}
+
+/* Add responsiveness for mobile devices */
+@media only screen and (min-width: 481px) and (max-width:780px) {
+    .sidenav {
+        height: 100%; 
+        width:20%; 
+        z-index: 1; 
+        left:2%;
+        border-right: 1px solid #a31818;
+        padding-top:1%;
+    }
+
+    section{
+        overflow:hidden;
+        height:50%;
+        width:50%;
+        margin-top:70px;
+        margin-left:20%;
+        background-color:rgb(248, 244, 244)
     }
 }

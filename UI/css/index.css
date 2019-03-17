@@ -74,3 +74,59 @@ img.avatar {
   text-align: center;
   margin-top: 15px;
 }
+
+/* Add responsiveness for mobile devices */
+@media only screen and (min-width: 280px) and (max-width:480px) {
+    body {
+      background-color:rgb(224, 240, 237);
+  }
+
+  /* Style the profile card */
+  .profile {
+    width:98%;
+    margin-top:2%;
+    margin-left:1%;
+    text-align: center;
+    height:300px;            
+    background-color: rgb(56, 53, 53);
+  }
+
+
+  /* Style the form body */
+.reset {
+  height:99%;
+  width:98%;
+  margin-top:5%;
+  border-radius: 5px;
+  background-color:white;
+  margin-left:1%;
+}
+}
+
+/* Add responsiveness for mobile devices */
+@media only screen and (min-width: 481px) and (max-width:1024px) {
+  body {
+      background-color:rgb(224, 240, 237);
+  }
+
+  /* Style the profile card */
+  .profile {
+    width:98%;
+    margin-top:1%;
+    margin-left:1%;
+    text-align: center;
+    height:680px;            
+    background-color: rgb(56, 53, 53);
+  }
+
+
+  /* Style the form body */
+  .reset {
+  height:99%;
+  width:98%;
+  margin-top:5%;
+  border-radius: 5px;
+  background-color:white;
+  margin-left:1%;
+  }
+  }

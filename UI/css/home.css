@@ -301,4 +301,26 @@ header nav{
 .dp{
     border-radius: 100%;
 }
+
+.more-btn{       
+    overflow:hidden;
+ }
+}
+
+/* Add responsiveness for mobile devices */
+@media only screen and (min-width: 481px) and (max-width:1024px) {
+    section{
+        overflow:auto;
+        height:1300px;
+        width:66%;
+        margin-top:10%;
+        margin-left:32%;
+        background-color:rgb(248, 244, 244)
+       
+    }
+
+    .sidenav {
+        width:32%;
+    }
+
 }
