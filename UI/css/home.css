@@ -23,11 +23,17 @@ header{
     width: 100%;
 }
 
-
 .nav-link{
     color: #333;
     text-decoration: none;
-    font-size: 18px;
+    width: 70px;
+    height: 70px;
+}
+
+.nav-item {
+   
+    float: left;
+    padding: 0 10px 0 10px;
 }
 
 section{
@@ -54,11 +60,7 @@ header nav{
     width: 100px;
 }
 
-.dp{
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-}
+
 
 .dropdown{
     padding-top: 15px;
@@ -151,6 +153,7 @@ header nav{
 .container1{
     margin-top: 7%;
     width: 100%;
+    overflow: hidden;
     margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
@@ -160,7 +163,9 @@ header nav{
 .container2{
     margin-top: 0px;
     width: 100%;
+    overflow: hidden;
     margin-left:0px;
+    overflow: hidden;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
@@ -168,6 +173,7 @@ header nav{
 .container3{
     margin-top: 0px;
     width: 100%;
+    overflow: hidden;
     margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
@@ -177,6 +183,7 @@ header nav{
     margin-top: 0px;
     width: 100%;
     margin-left:0px;
+    overflow: hidden;
     text-align: left;
     border: 1px  solid #f8cdcd;
 }
@@ -184,6 +191,7 @@ header nav{
 .container5{
     margin-top: 0px;
     width: 100%;
+    overflow: hidden;
     margin-left: 0px;
     text-align: left;
     border: 1px solid #f8cdcd;
@@ -248,7 +256,12 @@ header nav{
     margin-top: 7%;
     margin-left: 25%;
 }
-
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
 /* Add responsiveness for mobile devices */
 @media only screen and (min-width: 280px) and (max-width:480px) {
@@ -305,6 +318,7 @@ header nav{
 .more-btn{       
     overflow:hidden;
  }
+
 }
 
 /* Add responsiveness for mobile devices */
@@ -322,5 +336,6 @@ header nav{
     .sidenav {
         width:32%;
     }
+
 
 }
