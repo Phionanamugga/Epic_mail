@@ -11,11 +11,21 @@ body{
     overflow: hidden;  
 }
 
+section{
+    overflow: hidden;
+    height: 900px;
+    width:80%;
+    margin-top:0px;
+    margin-left:270px;
+    background-color:rgb(245, 239, 239)
+   
+}
+
 header{
     background:rgb(120, 174, 196);
     color: #333;
     padding-top: 5px;
-    min-height: 30px;
+    max-height: 100px;
     border-top:rgb(59, 245, 229);
     border-bottom: 1px solid #642a2a;
     top: 0;
@@ -27,10 +37,11 @@ header{
     text-decoration: none;
     font-size: 18px;
 }
-
 .nav{
     margin: 0;
     padding: 0;
+    margin-top:20%;
+ 
 }
 
 .nav-item{
@@ -52,9 +63,7 @@ header nav{
     width: 100px;
 }
 
-.avatar{
-    margin-top: 50px;
-}
+
 
 .dp{
     border-radius: 50%;
@@ -93,7 +102,7 @@ header nav{
     width: 20%; 
     position: fixed;
     z-index: 1; 
-    top: 108px; 
+    top:105px; 
     left: 0;
     border-right: 1px solid #a31818;
     overflow-x: hidden;
@@ -111,7 +120,6 @@ header nav{
 .sidenav a:hover {
     color: #333;
 }
-
 
 .question{
     margin-left: 45px;
@@ -190,9 +198,9 @@ header nav{
 
 .ask{
     margin-top:30px;
-    margin-left:30%;
+    margin-left:15%;
     width:500px;
-    height:500px;
+    height:300px;
   }
   #textareatwo {
     width: 99%;
@@ -209,7 +217,12 @@ header nav{
     padding: 5px 25px;
     font-size: 18px;
 }
-
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
 /* Add responsiveness for mobile devices */
 @media only screen and (min-width: 280px) and (max-width:480px) {
@@ -288,3 +301,21 @@ header nav{
     }   
 }
  
+
+/* Add responsiveness tablets */
+@media only screen and (min-width: 781px) and (max-width:1024){
+  
+    section{
+        overflow:auto;
+        height:1300px;
+        width:50%;
+        margin-top:10%;
+        margin-left:30%;
+        background-color:rgb(248, 244, 244)
+       
+    }
+
+    .sidenav {
+        width:32%;
+    }
+}

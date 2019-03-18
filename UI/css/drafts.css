@@ -15,12 +15,22 @@ header{
     background:rgb(120, 174, 196);
     color: #333;
     padding-top: 5px;
-    min-height: 50px;
+    max-height: 200px;
     border-top:rgb(59, 245, 229);
     border-bottom: 1px solid #b85f5f;
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+section{
+    overflow: hidden;
+    height:700px;
+    width: 900px;
+    margin-top:46px;
+    margin-left:270px;
+    background-color:rgb(248, 244, 244)
+   
 }
 
 .nav-link{
@@ -33,10 +43,12 @@ header{
 .nav{
     margin: 0;
     padding: 0;
+    margin-top:20%;
+ 
 }
 
 .nav-item{
-    display: inline;
+    float: left;
     padding: 0 10px 0 10px;
 }
 
@@ -54,16 +66,11 @@ header nav{
     width: 100px;
 }
 
-.avatar {
-    vertical-align: middle;
-    width: 20px;
-    margin-top: 5px;
-    height: 20px;
+.dp{
     border-radius: 50%;
-  }
-
-
-
+    height: 30px;
+    width: 30px;
+}
 
 .dropdown{
     padding-top: 15px;
@@ -154,8 +161,8 @@ header nav{
 
 .container1{
     margin-top: 7%;
-    width: 50%;
-    margin-left: 350px;
+    width:100%;
+    margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
     
@@ -163,32 +170,32 @@ header nav{
 
 .container2{
     margin-top: 0px;
-    width: 70%;
-    margin-left: 270px;
+    width:100%;
+    margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
 
 .container3{
     margin-top: 0px;
-    width: 70%;
-    margin-left: 270px;
+    width: 100%;
+    margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
 
 .container4{
-    margin-top: 0.5px;
-    width: 70%;
-    margin-left: 270px;
+    margin-top: 0px;
+    width: 100%;
+    margin-left:0px;
     text-align: left;
     border: 1px  solid #f8cdcd;
 }
 
 .container5{
     margin-top: 0px;
-    width: 70%;
-    margin-left: 270px;
+    width: 100%;
+    margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
@@ -196,7 +203,7 @@ header nav{
 .more-btn{
     border-radius: 6px;
     color: white;
-    background: #457daf;
+    background: #2d77b7;
     margin-left: 10px;
 }
 
@@ -224,7 +231,7 @@ header nav{
 }
 
 .comment-btn{
-    background: rgb(83, 82, 82);
+    background: #333;
     color: #fff;
     border-radius: 4px;
 }
@@ -249,52 +256,12 @@ header nav{
     margin-top: 7%;
     margin-left: 25%;
 }
-
-
-@media only screen and (max-width: 850px){
-    .sidenav{
-        display: none;
-    }
-    .side-btn{
-        display: inline;
-    }
-    .display{
-        width: 18%;
-        display: block;
-        top: 85px;
-    }
-
-}
-
-@media only screen and (max-width: 500px){
-    header nav{
-        float: left;
-    }
-
-    .container1{
-        margin-left: 5%;
-        width: 90%;
-    }
-
-    .question, .qn{
-        margin-left: 5px;
-    }
-
-    .btn{
-        margin-top: 0;
-    }
-
-    .display{
-        width: 100%;
-        display: block;
-        top: 145px;
-        background: #f9f9f9;
-    }
-
-    .ask{
-        margin-left: 10%;
-    }
-}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
 
 /* Add responsiveness for mobile devices */
@@ -303,59 +270,79 @@ header nav{
     header nav{
         float: right;
       width: 100%;
-      position: fixed;
-      height: 10%;
       padding: 5px 1px;
       overflow: auto;
     
     }
 
+    .nav{
+        margin: 0;
+        padding: 0;
+        float: left;
+        margin-top:0%;
+     
+    }
 
+ 
     .sidenav {
-        height: 50%; 
-        width:38%; 
-        z-index: 1; 
+        height:90%; 
+        width:40%; 
+        z-index: 1;
+        top:170px;  
         left:2%;
-        border-right: 1px solid #a31818;
-        padding-top:1%;
+        border-right: 1px solid #f3aeae;
+        padding-top:2%;
     }
 
     section{
         overflow:auto;
         height:50%;
-        width:50%;
-        margin-top:70px;
-        margin-left:10%;
+        width:55%;
+        margin-top:155px;
+        margin-left:42.2%;
         background-color:rgb(248, 244, 244)
+       
     }
 
-    .container1{
-        margin-top: 7%;
-        width: 100%;
-        margin-left:0px;
-        text-align: left;
-        border: 1px solid #f8cdcd;
-        
+    .search{ 
+
+        display:block;
     }
+    .search input{
+        padding: 10px;
+        border-radius:15px;
+        width:42%
+    }
+    .search button{
+        padding:7px 10px;
+        border-radius:10px;
+        color:green;
+    }
+
+
+.dp{
+    border-radius: 100%;
+}
+
+.more-btn{       
+    overflow:hidden;
+ }
+
 }
 
 /* Add responsiveness for mobile devices */
-@media only screen and (min-width: 481px) and (max-width:780px) {
-    .sidenav {
-        height: 100%; 
-        width:20%; 
-        z-index: 1; 
-        left:2%;
-        border-right: 1px solid #a31818;
-        padding-top:1%;
+@media only screen and (min-width: 481px) and (max-width:1024px) {
+    section{
+        overflow:auto;
+        height:1300px;
+        width:66%;
+        margin-top:10%;
+        margin-left:32%;
+        background-color:rgb(248, 244, 244)
+       
     }
 
-    section{
-        overflow:hidden;
-        height:50%;
-        width:50%;
-        margin-top:70px;
-        margin-left:20%;
-        background-color:rgb(248, 244, 244)
+    .sidenav {
+        width:32%;
     }
 }
