@@ -8,7 +8,6 @@ body{
 .container{
     width: 90%;
     margin: auto;
-    overflow: hidden;
 }
 
 header{
@@ -31,18 +30,16 @@ header{
 }
 
 .nav-item {
-   
     float: left;
     padding: 0 10px 0 10px;
 }
 
 section{
-    overflow: hidden;
-    height: 700px;
+    height:1000px;
     width: 900px;
-    margin-top:46px;
+    margin-top:100px;
     margin-left:270px;
-    background-color:rgb(248, 244, 244)
+    display:block;
    
 }
 
@@ -60,14 +57,22 @@ header nav{
     width: 100px;
 }
 
-
-
 .dropdown{
     padding-top: 15px;
     display: inline-block;
+  
 }
 
 .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
+    z-index: 4;
+}
+
+.dropdown-content2{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -82,24 +87,26 @@ header nav{
     text-decoration: none;
     display: block;
     text-align: left;
+  
 }
 .dropdown-content a:hover {background-color: #f1f1f1}
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block;    
 }
 
 .search{ 
-
-    display:block;
+    display:block;   
 }
 .search input{
     padding: 10px;
     border-radius:15px;
+    
 }
 .search button{
     padding:7px 10px;
     border-radius:10px;
     color:green;
+ 
 }
 
 
@@ -111,7 +118,6 @@ header nav{
     top: 109px; 
     left: 0;
     border-right: 1px solid #a31818;
-    overflow-x: hidden;
     padding-top: 20px;
 }
 
@@ -136,6 +142,8 @@ header nav{
 }
 
 
+
+
 .btn{
     border: none;
     cursor: pointer;
@@ -153,28 +161,22 @@ header nav{
 .container1{
     margin-top: 7%;
     width: 100%;
-    overflow: hidden;
     margin-left:0px;
     text-align: left;
-    border: 1px solid #f8cdcd;
-    
+    border: 1px solid #f8cdcd;  
 }
 
 .container2{
     margin-top: 0px;
     width: 100%;
-    overflow: hidden;
     margin-left:0px;
-    overflow: hidden;
     text-align: left;
-    border: 1px solid #f8cdcd;
+    border: 1px solid #f8cdcd;   
 }
 
 .container3{
     margin-top: 0px;
     width: 100%;
-    overflow: hidden;
-    margin-left:0px;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
@@ -183,7 +185,6 @@ header nav{
     margin-top: 0px;
     width: 100%;
     margin-left:0px;
-    overflow: hidden;
     text-align: left;
     border: 1px  solid #f8cdcd;
 }
@@ -191,70 +192,92 @@ header nav{
 .container5{
     margin-top: 0px;
     width: 100%;
-    overflow: hidden;
     margin-left: 0px;
     text-align: left;
     border: 1px solid #f8cdcd;
 }
-
-
 
 .more-btn{
     border-radius: 6px;
     color: white;
     background: #2d77b7;
     margin-left: 10px;
-   overflow: auto;
+    overflow-wrap:inherit;
+}
+
+.more-btn2{
+    border-radius: 6px;
+    color: white;
+    background: #2d77b7;
+    margin-left: 10px;
 }
 
 .icon{
     height: 30px;
     width: 30px;
+  
 }
 
 .qn{
     margin-top: 0;
     margin-left: 10%;
+    overflow:auto;
+   
 }
+
 
 .ans{
     margin-left: 10%;
+    
 }
 
 .ans hr{
     color: #c6c6c6;
     margin-right: 10%;
+    
 }
 
 .answer{
     margin-bottom: 0;
+
 }
 
 .comment-btn{
     background: #333;
     color: #fff;
     border-radius: 4px;
+    
 }
 
 .dropdown-comment{
     position: relative;
-    display: inline;
+    display: inline;    
 }
+
+.dropdown-comment{
+    position: relative;
+    display: inline;    
+}
+
+
 
 .dropdown-contents{
     display: none;
     position: absolute;
     z-index: 1;
     margin-left: 65px;
+  
 }
 .show {
     display: block;
     position: relative;
+    
 }
 
 .ask{
     margin-top: 7%;
     margin-left: 25%;
+   
 }
 .avatar {
     vertical-align: middle;
@@ -274,7 +297,6 @@ header nav{
     
     }
 
-
     .sidenav {
         height:90%; 
         width:40%; 
@@ -291,8 +313,8 @@ header nav{
         width:55%;
         margin-top:170px;
         margin-left:42.2%;
-        background-color:rgb(248, 244, 244)
-       
+        background-color:rgb(248, 244, 244);
+        overflow:hidden;
     }
 
     .search{ 
@@ -310,16 +332,24 @@ header nav{
         color:green;
     }
 
-
-.dp{
-    border-radius: 100%;
-}
-
-.more-btn{       
+    .dp{
+        border-radius: 100%;
+    }
+    .more-btn{
+        border-radius: 6px;
+        color: white;
+        background: #2d77b7;
+        margin-left: 10px;
     overflow:hidden;
- }
-
-}
+    }
+    .container1{
+        margin-top: 7%;
+        width: 100%;
+        text-align: left;
+        overflow: hidden;
+        border: 1px solid #f8cdcd;  
+    }
+    }
 
 /* Add responsiveness for mobile devices */
 @media only screen and (min-width: 481px) and (max-width:1024px) {
@@ -337,5 +367,11 @@ header nav{
         width:32%;
     }
 
-
+    .more-btn{
+        border-radius: 6px;
+        color: white;
+        background: #2d77b7;
+        margin-left: 10px;
+       overflow:hidden;
+    }
 }
