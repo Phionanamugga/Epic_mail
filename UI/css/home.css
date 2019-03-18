@@ -279,7 +279,7 @@ header nav{
         height:90%; 
         width:40%; 
         z-index: 1;
-        top: 208px;  
+        top:185px;  
         left:2%;
         border-right: 1px solid #f3aeae;
         padding-top:2%;
@@ -289,7 +289,7 @@ header nav{
         overflow:auto;
         height:50%;
         width:55%;
-        margin-top:196px;
+        margin-top:170px;
         margin-left:42.2%;
         background-color:rgb(248, 244, 244)
        
