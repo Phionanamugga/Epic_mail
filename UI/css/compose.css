@@ -226,96 +226,357 @@ header nav{
 
 /* Add responsiveness for mobile devices */
 @media only screen and (min-width: 280px) and (max-width:480px) {
-    header nav{
-        float: right;
-      width:100%;
-      padding: 5px 1px;
-      overflow: auto;
+    header{
+        background:rgb(120, 174, 196);
+        color: #333;
+        padding-top: 5px;
+        max-height: 150px;
+        border-top:rgb(59, 245, 229);
+        border-bottom: 1px solid #642a2a;
+        top: 0;
+        width: 100%;
+    }
     
+    .container{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;  
     }
 
     .sidenav {
         height:100%; 
-        width:30%; 
+        width:40%; 
         font-size:1px;
         z-index: 1;
-        top: 155px;  
+        top: 115px;  
         left:0%;
         border-right: 1px solid #f3aeae;
         padding-top:2%;
     }
 
-
+    .nav{
+        margin: 0;
+        padding: 0;
+        margin-top:20%;
+     
+    }
+    
     .ask{
-        margin-top:3%;
-        margin-left:32%;
+        margin-top:10%;
+        margin-left:5%;
         width:210px;
         height:400px;
       }
       #textareatwo {
-        width: 99%;
+        width:240px;
         height:300px;
       }
+    .search{ 
 
-    search{ 
+        display:block;
+    }
+    .search input{
+        padding: 10px;
+        border-radius:15px;
+        width:42%
+    }
+    .search button{
+        padding:7px 10px;
+        border-radius:10px;
+        color:green;
+    }
 
-        width:50%;
+    section{
+        overflow:auto;
+        height:50%;
+        width:55%;
+        margin-top:10px;
+        margin-left:42.2%;
+        background-color:rgb(248, 244, 244)
     
     }
+
+/* Add responsiveness tablets */
+@media only screen and (min-width: 481px) and (max-width:780){
+    body{
+        font-family: 'Lato';
+        margin: 0;
+        padding: 0;
+        background: #f9f9f9;
+    }
+    
+    .container{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;  
+    }
+    
+    section{
+        overflow: hidden;
+        height: 900px;
+        width:50%;
+        margin-top:100px;
+        margin-left:200px;
+        background-color:rgb(245, 239, 239)
+    }
+    
+    header{
+        background:rgb(120, 174, 196);
+        color: #333;
+        padding-top: 5px;
+        max-height: 100px;
+        border-top:rgb(59, 245, 229);
+        border-bottom: 1px solid #642a2a;
+        top: 0;
+        width:100%;
+    }
+    
+    .nav-link{
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .nav{
+        margin: 0;
+        padding: 0;
+        margin-top:2%;
+     
+    }
+    
+    .nav-item{
+        display: inline;
+        padding: 0 10px 0 10px;
+    }
+    
+    .branding{
+        float: left;
+        padding: 0;
+    }
+    
+    header nav{
+        float: right;
+    }
+    
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+    
+    .dropdown{
+        padding-top: 15px;
+        display: inline-block;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
+        z-index: 4;
+    }
+    
+    .dropdown-content a{
+        color: rgb(39, 32, 32);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .sidenav {
+        height: 100%; 
+        width: 30%; 
+        position: fixed;
+        z-index: 1; 
+        top:105px; 
+        left:5%;
+        border-right: 1px solid #a31818;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration:none;
+        font-size: 20px;
+        color: #a5a4a5;
+        display: block;
+    }
+    
+    .sidenav a:hover {
+        color: #333;
+    }
+    
+    .question{
+        margin-left: 45px;
+    }
+    
+    .btn{
+        border: none;
+        cursor: pointer;
+        padding: 5px 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        background: #f9f9f9;
+    }
+    .btn:active{
+        position: relative;
+        top: 2px;
+    }
+    
+    
+    .icon{
+        height: 30px;
+        width: 30px;
+    }
+    
+    .qn{
+        margin-top: 0;
+        margin-left: 10%;
+    }
+    
+    .ans{
+        margin-left: 10%;
+    }
+    
+    .ans hr{
+        color: #c6c6c6;
+        margin-right: 10%;
+    }
+    
+    .answer{
+        margin-bottom: 0;
+    }
+    
+    .comment-btn{
+        background: #333;
+        color: #fff;
+        border-radius: 4px;
+    }
+    
+    .dropdown-contents{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        margin-left: 65px;
+    }
+    .show {
+        display: block;
+        position: relative;
+    }
+    
+    .search{ 
+
+        display:block;
+    }
+    .search input{
+        padding: 10px;
+        border-radius:15px;
+        width:30%
+    }
+    .search button{
+        padding:7px 10px;
+        border-radius:10px;
+        color:green;
+    }
+    
+    .ask{
+        margin-top:30px;
+        margin-left:15%;
+        width:500px;
+        height:300px;
+      }
+      #textareatwo {
+        width:50%;
+        height:200px;
+      }
+    
+      .description {
+        margin-left:0%;
+      }
     .ask-btn{
         background-color: #2d77b7;
         color: #fff;
         border-radius: 8px;
         padding: 5px 25px;
         font-size: 18px;
-        margin-left: 50%;  
-}
-
-
-/* Add responsiveness tablets */
-@media only screen and (min-width: 481px) and (max-width:780){
-    header nav{
-        float: right;
-      width: 100%;
-      padding: 5px 1px;
-      overflow: auto;
-    
     }
-
-    .sidenav {
-        height:90%; 
-        width:50%; 
-        font-size:1px;
-        z-index: 1;
-        top: 155px;  
-        left:0%;
-        border-right: 1px solid #f3aeae;
-        padding-top:2%;
-    }
-
-    .ask{
-        margin-top:2%;
-        margin-left:45%;
-        height: 400px;
-        width: 400px
-    }   
-}
- 
+    .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius:50%;
+      }
+      
+      
 
 /* Add responsiveness tablets */
 @media only screen and (min-width: 781px) and (max-width:1024){
   
     section{
-        overflow:auto;
-        height:1300px;
-        width:50%;
-        margin-top:10%;
-        margin-left:30%;
-        background-color:rgb(248, 244, 244)
-       
+        overflow: hidden;
+        height: 700px;
+        width:40%;
+        margin-top:150px;
+        margin-left:50px;
+        background-color:rgb(245, 239, 239) 
     }
 
-    .sidenav {
-        width:32%;
+    header{
+        background:rgb(120, 174, 196);
+        color: #333;
+        padding-top: 5px;
+        max-height: 100px;
+        border-top:rgb(59, 245, 229);
+        border-bottom: 1px solid #642a2a;
+        top: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius:5%;
+    }
+
+
+    .container{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;  
+    }
+      
+    header{
+        background:rgb(120, 174, 196);
+        color: #333;
+        padding-top: 5px;
+        max-height: 100px;
+        border-top:rgb(59, 245, 229);
+        border-bottom: 1px solid #642a2a;
+        top: 0;
+        width:70%;
+    }
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration:none;
+        font-size: 20px;
+        color: #a5a4a5;
+        display: block;
+        margin-right:100px; 
+    }
+    
+    .sidenav a:hover {
+        color: #333;
     }
 }
+}
+    
+    }
