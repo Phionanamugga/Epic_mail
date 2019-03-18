@@ -4,7 +4,7 @@ The internet is increasingly becoming an integral part of lives. Ever since the 
 
 Epic mail is therefore designed to bridge the two technologies by being an app that helps people exchange messages/information over the internet. 
 
-## Features
+## Features.
 
 - Users can create an account and log in
 - Users can create groups.
