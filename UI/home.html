@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="images/epic_mail.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="JS/home.js"></script>
+    
 </head>
    
 <body>
@@ -58,16 +58,18 @@
                             <small class="username"><b>Joy</b></small>
                             <small class="date1">14/03/2019 17:45</small>
                         </span><br><br>
-                        <div class="reply">
-                            <span class="dropdown-comment">
-                            <button onclick="drop()" class="btn more-btn">Reply</button>
-                            <div id="comment-dropdown1" class="dropdown-contents">
-                                <textarea name="comment" id="" cols="50" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
-                                <button class="btn comment-btn">Send</button>
-                                </div>
-                            </span>
-                        </div>      
+                                <span class="dropdown-comment">
+                                    <button onclick="drop()" class="btn more-btn">Reply</button>
+                                    <div id="comment-dropdown" class="dropdown-contents">
+                                        <span>
+                                        </span><br><br>
+                                        <textarea name="comment" id="" cols="30" rows="5" placeholder="reply..." maxlength="140"></textarea><br>
+                                        <button class="btn comment-btn">Send</button>
+                                    </div>
+                                </span>
                     </div>
+                </div>      
+            </div>
                 </div>
                     <div class="container2">
                         <div class="question">
@@ -77,13 +79,13 @@
                             <small class="date">14/03/2019 17:45</small>
                             </span><br><br>
                             <span class="dropdown-comment">
-                            <button onclick="drop()" class="btn more-btn">Reply</button>
+                            <button onclick="drop2()" class="btn more-btn">Reply</button>
                                 <div id="comment-dropdown2" class="dropdown-contents">
                                 <span>
                                 <p class="answer">Yah, I have a similar question</p>
                                 <small><b>Nancy</b> 22/08/2018 21:32</small>
                                 </span><br><br>
-                                    <textarea name="comment" id="" cols="50" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
+                                    <textarea name="comment" id="" cols="50" rows="5" placeholder="reply..." maxlength="140"></textarea><br>
                                     <button class="btn comment-btn">Send</button>
                                   </div>
                                 </span>
@@ -126,9 +128,9 @@
                             </div>
                             <div class="container5">
                                 <div class="question">
-                                    <p>Trending make up collection</p>
+                                    <p>Check out trendy make up for 2019</p>
                                     <span class="qn-details">
-                                        <small class="username"><b>Tracy</b></small>
+                                        <small class="username"><b>Carol</b></small>
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
@@ -143,14 +145,14 @@
                             </div>
                             <div class="container5">
                                 <div class="question">
-                                    <p>What are trending hairstyles in 2019?</p>
+                                    <p>What are the trendy hairstyles 2019</p>
                                     <span class="qn-details">
-                                        <small class="username"><b>Tracy</b></small>
+                                        <small class="username"><b>Happy</b></small>
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
                                         <button onclick="drop()" class="btn more-btn">Reply</button>
-                                        <div id="comment-dropdown5" class="dropdown-contents">
+                                        <div id="comment-dropdown6" class="dropdown-contents">
                                             <textarea name="comment" id="" cols="50" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
                                             <button class="btn comment-btn">Send</button>
                                         </div>
@@ -160,5 +162,6 @@
                             </div>
                      </div>
         </section>
-        
+        <script src="JS/home.js"></script>
 </body>
+</html>
