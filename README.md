@@ -51,4 +51,4 @@ Open the repo folder using your code editor forexample vscode
 
 ## _Author_
 
-    Phiona Namugga
+    Phiona Namugga.
