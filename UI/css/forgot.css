@@ -1,0 +1,132 @@
+/* Style the body */
+body {
+    background-color:rgb(224, 240, 237);
+  }
+
+/* Style the profile card */
+.profile {
+    width: 406px;
+    margin-top: 130px;
+    margin-left: 480px;
+    text-align: center;
+    height: 350px;            
+    background-color: rgb(56, 53, 53);
+    }
+    
+    /* Style the form body */
+    .reset {
+    height: 347px;
+    width: 400px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color:white;
+    margin-left: 3px;
+    }
+    
+    .imgcontainer {
+    text-align: center;
+    margin-top:50px;
+   
+    }
+    
+  
+
+    .input_container{
+    position: relative;
+    margin-left:-30px;
+    width:450px;
+    margin-top:70px;
+    }
+    
+    .input{
+    height: 30px;
+    width: 75%;
+    margin-left:20px;
+    border:solid 1px #000 ;
+    font-size: 15px;
+    color: #000;
+    background: #fff;
+    }
+    
+    .icon{ 
+    position: relative;
+    top: 8px;
+    left: 50px;
+    width: 16px;
+    height: 16px;
+    }
+
+ 
+    .btn{
+    padding: 8px 35px;
+    border: none;
+    background: #008cff;
+    color: #fff;
+    font-size: 18px;
+    margin-top:50px;
+    border-radius: 18px;
+    cursor: pointer;
+    }
+    
+    /* Style the forgot password query */
+    #reminder {
+    text-align: center;
+    margin-top: 15px;
+    }
+    
+    /* Add responsiveness for mobile devices */
+    @media only screen and (min-width: 280px) and (max-width:480px) {
+        body {
+          background-color:rgb(224, 240, 237);
+      }
+    
+      /* Style the profile card */
+      .profile {
+        width:98%;
+        margin-top:2%;
+        margin-left:1%;
+        text-align: center;
+        height:400px;            
+        background-color: rgb(56, 53, 53);
+      }
+    
+    
+      /* Style the form body */
+    .reset {
+      height:99%;
+      width:98%;
+      margin-top:5%;
+      border-radius: 5px;
+      background-color:white;
+      margin-left:1%;
+    }
+    }
+    
+    /* Add responsiveness for mobile devices */
+    @media only screen and (min-width: 481px) and (max-width:780px) {
+      body {
+          background-color:rgb(224, 240, 237);
+      }
+    
+      /* Style the profile card */
+      .profile {
+        width:98%;
+        margin-top:1%;
+        margin-left:1%;
+        text-align: center;
+        height:680px;            
+        background-color: rgb(56, 53, 53);
+      }
+    
+    
+      /* Style the form body */
+      .reset {
+      height:99%;
+      width:98%;
+      margin-top:5%;
+      border-radius: 5px;
+      background-color:white;
+      margin-left:1%;
+      }
+      }
+    
