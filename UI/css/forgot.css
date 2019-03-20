@@ -9,13 +9,13 @@ body {
     margin-top: 130px;
     margin-left: 480px;
     text-align: center;
-    height: 350px;            
+    height: 250px;            
     background-color: rgb(56, 53, 53);
     }
     
     /* Style the form body */
     .reset {
-    height: 347px;
+    height: 247px;
     width: 400px;
     margin-top: 10px;
     border-radius: 5px;
