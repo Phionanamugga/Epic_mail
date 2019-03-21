@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +9,11 @@
     <link rel="shortcut icon" type="image/png" href="images/epic_mail.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
    
 <body>
     <header>
-        <div class="container">
+        <div id="container">
             <div class="branding">
                 <img class="logo" src="images/epic_mail.png" alt="logo">
             </div>
@@ -50,21 +48,21 @@
             <a href="create.html">Create a group</a>
         </div>
         <section>
-             <div class="section">
+            <div class="section">
                 <div class="container1">
-                   <div class="question">
+                   <div class="question" id="question1">
                         <p>Hallo Matha, will you be able to attend Cate's wedding?</p>
                         <span class="qn-details">
                             <small class="username"><b>Joy</b></small>
                             <small class="date1">14/03/2019 17:45</small>
                         </span><br><br>
                                 <span class="dropdown-comment">
-                                    <button onclick="drop()" class="btn more-btn">Reply</button>
-                                    <div id="comment-dropdown" class="dropdown-contents">
+                                    <button class="btn more-btn reply" id="reply">Reply</button>
+                                    <div id="comment-dropdown" class="dropdown-contents" >
                                         <span>
                                         </span><br><br>
-                                        <textarea name="comment" id="" cols="30" rows="5" placeholder="reply..." maxlength="140"></textarea><br>
-                                        <button class="btn comment-btn">Send</button>
+                                        <div class="description"><textarea id="textareatwo" placeholder="Reply..."></textarea></div><br>
+                                        <button class="btn comment-btn" id="send">Send</button>
                                     </div>
                                 </span>
                     </div>
@@ -79,14 +77,14 @@
                             <small class="date">14/03/2019 17:45</small>
                             </span><br><br>
                             <span class="dropdown-comment">
-                            <button onclick="drop2()" class="btn more-btn">Reply</button>
+                            <button onclick="drop2()" class="btn more-btn reply2" id="reply2">Reply</button>
                                 <div id="comment-dropdown2" class="dropdown-contents">
                                 <span>
                                 <p class="answer">Yah, I have a similar question</p>
                                 <small><b>Nancy</b> 22/08/2018 21:32</small>
                                 </span><br><br>
-                                    <textarea name="comment" id="" cols="50" rows="5" placeholder="reply..." maxlength="140"></textarea><br>
-                                    <button class="btn comment-btn">Send</button>
+                                <div class="description"><textarea id="textareatwo2" placeholder="Reply..."></textarea></div><br>
+                                    <button class="btn comment-btn" id="send2">Send</button>
                                   </div>
                                 </span>
                                    
@@ -100,10 +98,10 @@
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
-                                        <button onclick="drop()" class="btn more-btn">Reply</button>
+                                        <button onclick="drop()" class="btn more-btn" id="reply3" >Reply</button>
                                         <div id="comment-dropdown3" class="dropdown-contents">
-                                            <textarea name="comment" id="" cols="50" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
-                                            <button class="btn comment-btn3">Send</button>
+                                            <div class="description"><textarea id="textareatwo3" placeholder="Reply..."></textarea></div><br>
+                                            <button class="btn comment-btn" id="send3">Send</button>
                                         </div>
                                     </span>
                                    
@@ -117,10 +115,10 @@
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
-                                        <button onclick="drop()" class="btn more-btn">Reply</button>
+                                        <button onclick="drop()" class="btn more-btn" id="reply4">Reply</button>
                                         <div id="comment-dropdown4" class="dropdown-contents">
-                                            <textarea name="comment" id="" cols="50" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
-                                            <button class="btn comment-btn">Send</button>
+                                            <div class="description"><textarea id="textareatwo4" placeholder="Reply..."></textarea></div><br>
+                                            <button class="btn comment-btn" id="send4">Send</button>
                                         </div>
                                     </span>
                                    
@@ -134,16 +132,16 @@
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
-                                        <button onclick="drop()" class="btn more-btn">Reply</button>
+                                        <button onclick="drop()" class="btn more-btn" id="reply5">Reply</button>
                                         <div id="comment-dropdown5" class="dropdown-contents">
-                                            <textarea name="comment" id="" cols="50" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
-                                            <button class="btn comment-btn">Send</button>
+                                            <div class="description"><textarea id="textareatwo5" placeholder="Reply..."></textarea></div><br>
+                                            <button class="btn comment-btn" id="send5">Send</button>
                                         </div>
                                     </span>
                                    
                                 </div>
                             </div>
-                            <div class="container5">
+                            <div class="container6">
                                 <div class="question">
                                     <p>What are the trendy hairstyles 2019</p>
                                     <span class="qn-details">
@@ -151,10 +149,10 @@
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
-                                        <button onclick="drop()" class="btn more-btn">Reply</button>
+                                        <button onclick="drop()" class="btn more-btn" id="reply6">Reply</button>
                                         <div id="comment-dropdown6" class="dropdown-contents">
-                                            <textarea name="comment" id="" cols="50" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
-                                            <button class="btn comment-btn">Send</button>
+                                            <div class="description"><textarea id="textareatwo6" placeholder="Reply..."></textarea></div><br>
+                                            <button class="btn comment-btn" id="send6">Send</button>
                                         </div>
                                     </span>
                                    

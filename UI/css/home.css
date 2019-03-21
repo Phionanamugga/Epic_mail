@@ -2,12 +2,13 @@ body{
     font-family: 'Lato';
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: white;
 }
 
 .container{
-    width: 90%;
+    width:90%;
     margin: auto;
+    overflow: hidden;
 }
 
 header{
@@ -15,11 +16,11 @@ header{
     color: #333;
     padding-top: 5px;
     min-height: 100px;
-    border-top:rgb(59, 245, 229);
-    border-bottom: 1px solid #b85f5f;
-    position: fixed;
+    border-bottom: 1px solid black;
+    position:fixed;
     top: 0;
     width: 100%;
+    z-index:55;
 }
 
 .nav-link{
@@ -37,10 +38,14 @@ header{
 section{
     height:1000px;
     width: 900px;
-    margin-top:100px;
+    overflow:hidden;
+    z-index: 1;
+    margin-top:3%;
     margin-left:270px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     display:block;
-   
+    background-color:white 
 }
 
 .branding{
@@ -105,19 +110,18 @@ header nav{
 .search button{
     padding:7px 10px;
     border-radius:10px;
-    color:green;
+    color:black;
  
 }
-
 
 .sidenav {
     height: 100%; 
     width: 20%; 
     position: fixed;
     z-index: 1; 
-    top: 109px; 
+    top: 110px; 
     left: 0;
-    border-right: 1px solid #a31818;
+    border-right: 1px solid black;
     padding-top: 20px;
 }
 
@@ -163,7 +167,7 @@ header nav{
     width: 100%;
     margin-left:0px;
     text-align: left;
-    border: 1px solid #f8cdcd;  
+    border: 1px solid black;  
 }
 
 .container2{
@@ -171,14 +175,14 @@ header nav{
     width: 100%;
     margin-left:0px;
     text-align: left;
-    border: 1px solid #f8cdcd;   
+    border: 1px solid black;   
 }
 
 .container3{
     margin-top: 0px;
     width: 100%;
     text-align: left;
-    border: 1px solid #f8cdcd;
+    border: 1px solid black;
 }
 
 .container4{
@@ -186,7 +190,7 @@ header nav{
     width: 100%;
     margin-left:0px;
     text-align: left;
-    border: 1px  solid #f8cdcd;
+    border: 1px  solid black;
 }
 
 .container5{
@@ -194,12 +198,12 @@ header nav{
     width: 100%;
     margin-left: 0px;
     text-align: left;
-    border: 1px solid #f8cdcd;
+    border: 1px solid black;
 }
 
 .more-btn{
     border-radius: 6px;
-    color: white;
+    color: black;
     background: #2d77b7;
     margin-left: 10px;
     overflow-wrap:inherit;
@@ -208,7 +212,7 @@ header nav{
 .more-btn2{
     border-radius: 6px;
     color: white;
-    background: #2d77b7;
+    background:black;
     margin-left: 10px;
 }
 
@@ -225,6 +229,33 @@ header nav{
    
 }
 
+#textareatwo {
+    width:400px;
+    height:200px;
+  }
+#textareatwo2{
+    width:70px;
+    margin-left:1%;
+    height:70px;
+  }
+
+  #textareatwo3{
+    width:70px;
+    margin-left:1%;
+    height:70px;
+  }
+
+  #textareatwo4{
+    width:70px;
+    margin-left:1%;
+    height:70px;
+  }
+
+  #textareatwo5{
+    width:70px;
+    margin-left:1%;
+    height:70px;
+  }
 
 .ans{
     margin-left: 10%;
@@ -259,15 +290,13 @@ header nav{
     display: inline;    
 }
 
-
-
 .dropdown-contents{
     display: none;
-    position: absolute;
+    position:block;
     z-index: 1;
     margin-left: 65px;
-  
 }
+
 .show {
     display: block;
     position: relative;
@@ -287,8 +316,12 @@ header nav{
   }
 
 /* Add responsiveness for mobile devices */
-@media only screen and (min-width: 280px) and (max-width:480px) {
-
+@media only screen and (min-width: 280px) and (max-width:480px) { 
+    header{
+        position:fixed;
+        z-index:55;
+    }
+    
     header nav{
         float: right;
       width: 100%;
@@ -303,22 +336,24 @@ header nav{
         z-index: 1;
         top:185px;  
         left:2%;
-        border-right: 1px solid #f3aeae;
+        border-right: 1px solid black;
         padding-top:2%;
     }
 
     section{
-        overflow:auto;
+        overflow:hidden;
         height:50%;
         width:55%;
-        margin-top:170px;
+        margin-top:44%;
+        z-index: 1;
         margin-left:42.2%;
         background-color:rgb(248, 244, 244);
-        overflow:hidden;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        display:block;
     }
 
     .search{ 
-
         display:block;
     }
     .search input{
@@ -329,7 +364,7 @@ header nav{
     .search button{
         padding:7px 10px;
         border-radius:10px;
-        color:green;
+        color:black;
     }
 
     .dp{
@@ -337,7 +372,7 @@ header nav{
     }
     .more-btn{
         border-radius: 6px;
-        color: white;
+        color: black;
         background: #2d77b7;
         margin-left: 10px;
     overflow:hidden;
@@ -347,31 +382,99 @@ header nav{
         width: 100%;
         text-align: left;
         overflow: hidden;
-        border: 1px solid #f8cdcd;  
+        border: 1px solid black;  
+    }
+    #textareatwo {
+        width:70px;
+        margin-left:1%;
+        height:70px;
+      }
+
+      #textareatwo2{
+        width:70px;
+        margin-left:1%;
+        height:70px;
+      }
+
+      #textareatwo3{
+        width:70px;
+        margin-left:1%;
+        height:70px;
+      }
+
+      #textareatwo4{
+        width:70px;
+        margin-left:1%;
+        height:70px;
+      }
+
+      #textareatwo5{
+        width:70px;
+        margin-left:1%;
+        height:70px;
+      }
+
+    .container1{
+        margin-top:15%;  
     }
     }
 
 /* Add responsiveness for mobile devices */
 @media only screen and (min-width: 481px) and (max-width:1024px) {
     section{
-        overflow:auto;
+        overflow:hidden;
         height:1300px;
         width:66%;
         margin-top:10%;
         margin-left:32%;
-        background-color:rgb(248, 244, 244)
-       
+        background-color:white   
     }
+
+    #textareatwo {
+        width:300px;
+        margin-left:1%;
+        height:200px;
+      }
+
+    #textareatwo2{
+        width:300px;
+        margin-left:1%;
+        height:200px;
+      }
+
+      #textareatwo3{
+        width:300px;
+        margin-left:1%;
+        height:200px;
+      }
+
+      #textareatwo4{
+        width:300px;
+        margin-left:1%;
+        height:200px;
+      }
+
+      #textareatwo5{
+        width:300px;
+        margin-left:1%;
+        height:200px;
+      }
 
     .sidenav {
         width:32%;
+        position:fixed;
     }
 
     .more-btn{
         border-radius: 6px;
-        color: white;
+        color: black;
         background: #2d77b7;
         margin-left: 10px;
        overflow:hidden;
+    }
+
+    header{
+        position:fixed;
+        z-index:55;
     }
 }
