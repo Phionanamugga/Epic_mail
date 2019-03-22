@@ -11,6 +11,28 @@ body{
     overflow: hidden;  
 }
 
+.email{
+    padding:3px;
+    margin-bottom: 50px;
+    
+}
+
+select{
+    margin-top:30px;
+    height:30px;
+    width:46.5%;
+    margin-left:14.5%
+
+}
+
+select2{
+    margin-top:30px;
+    height:30px;
+    width:46.5%;
+    margin-left:14.5%
+
+}
+
 section{
     overflow: hidden;
     height: 900px;
@@ -193,14 +215,30 @@ header nav{
 
 .ask{
     margin-top:30px;
-    margin-left:15%;
+    margin-left:14.5%;
     width:500px;
-    height:300px;
+    height:350px;
+
   }
+
+.Subject{
+    margin-top:30px;
+    margin-left:14.5%;
+    width:46.5%;
+    height:40px; 
+    background-color: black
+}
+
   #textareatwo {
-    width: 99%;
-    height:430px;
+    width:500px;
+    height:250px;
   }
+
+  #textareaone{
+      height:40px;
+      width:100%; 
+  }
+
 
   .description {
     margin-left:0%;
