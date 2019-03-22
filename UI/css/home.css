@@ -230,31 +230,37 @@ header nav{
 }
 
 #textareatwo {
-    width:400px;
-    height:200px;
+    width:70%;
+    height:100px;
   }
 #textareatwo2{
-    width:70px;
+    width:70%;
     margin-left:1%;
-    height:70px;
+    height:100px;
   }
 
   #textareatwo3{
-    width:70px;
+    width:70%;
     margin-left:1%;
-    height:70px;
+    height:100px;
   }
 
   #textareatwo4{
-    width:70px;
+    width:70%;
     margin-left:1%;
-    height:70px;
+    height:100px;
   }
 
   #textareatwo5{
-    width:70px;
+    width:70%;
     margin-left:1%;
-    height:70px;
+    height:100px;
+  }
+
+  #textareatwo6{
+    width:70%;
+    margin-left:1%;
+    height:100px;
   }
 
 .ans{
