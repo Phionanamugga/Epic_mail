@@ -6,7 +6,7 @@ Epic mail is therefore designed to bridge the two technologies by being an app t
 
 ## Features.
 
-- Users can create an account and log in
+- Users can create an account and log in.
 - Users can create groups.
 - Users can send a message to individuals.
 - Users can view their inbox and read messages.
