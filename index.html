@@ -7,6 +7,7 @@
     <title>Epic_mail | Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="UI/css/index.css" />
+    <script src="UI/JS/index.js"></script>
 </head>
    
 <body>
@@ -15,19 +16,19 @@
           <div class="imgcontainer">
             <img src="image/epic_mail.png" class="avatar">
           
-        <form action="UI/home.html">
+        <form name='login' action="UI/home.html" method="post" onSubmit="return formValidation()">
           <div class="input_container">
-              <input type="text" name="username" placeholder="Username" id="username" class="input username" required>
+              <input type="text" id="txt" name="username" pattern="[A-Za-z]" placeholder="Username" class="input username" size="50" required>
               <img src="image/user.png" alt="" class="icon">
           </div>
           <br>
           <div class="input_container">
-              <input type="password" name="password" placeholder="Password" class="input password" required>
+              <input type="password" id="num" name="password" placeholder="Password" class="input password" size="12" required>
               <img src="image/password.png" alt="" class="icon">
           </div>
           <br>
           <br>
-        <a href="home.html"><button class="btn login">Login</button></a>
+        <a href="home.html"><button value="Submit" class="btn login">Login</button></a>
         <br><br>
             <div>
                 <label for="link">Not a member yet?</label>
@@ -38,9 +39,7 @@
           </div>
         </div>
       </form>
-      </div>
-            
-                    
+      </div>               
     </div>
 </body>
 
