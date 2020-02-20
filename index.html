@@ -16,14 +16,14 @@
           <div class="imgcontainer">
             <img src="image/epic_mail.png" class="avatar">
           
-        <form name='login' action="UI/home.html" method="post" onSubmit="return formValidation()">
+        <form name='login' action="UI/home.html" method="post" >
           <div class="input_container">
-              <input type="text" id="txt" name="username" pattern="[A-Za-z]" placeholder="Username" class="input username" size="50" required>
+              <input type="text" id="txt" name="username" placeholder="Username" class="input username" pattern="^([a-zA-Z]{3,20})$" required>
               <img src="image/user.png" alt="" class="icon">
           </div>
           <br>
           <div class="input_container">
-              <input type="password" id="num" name="password" placeholder="Password" class="input password" size="12" required>
+              <input type="password" id="num" name="password" minlength="6" maxlength="10" placeholder="Password" class="input password" size="12" required>
               <img src="image/password.png" alt="" class="icon">
           </div>
           <br>
