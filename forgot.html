@@ -16,9 +16,9 @@
           </div>
             <form action="">
                 <div class="input_container">
-                    <input type="email" name="email" placeholder="Enter email" class="input email" required>
+                    <input type="email" name="email" id="email" placeholder="Enter email" pattern="^[A-Za-z._%+-]+@[A-Za-z.-]+\.[A-Za-z]{2,4}$" class="input email" required>
                 </div>
-                    <a href=""><button class="btn login">Submit</button></a>
+                    <a href=""><button onclick="alert('Check email for password reset link!')" class="btn login" id="reset">Submit</button></a>
                 </div>
             </form>
       </div>
