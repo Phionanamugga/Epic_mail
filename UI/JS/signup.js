@@ -1,11 +1,7 @@
-function formValidation()
-{
-var uname = document.registration.username;
-var passid = document.registration.password;
+var password = document.getElementById("password"),
+confirm_password = document.getElementById("confirm_password");
 
-
-
-if(passid_validation(passid,7,12));
-if(allLetter(uname));
-return false;
+function validatePassword(){
+    if(password.value != confirm_password.value){
+        return confirm_password.setCustomValidity("Passwords do not match!");}
 }
