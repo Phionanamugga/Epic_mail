@@ -6,7 +6,7 @@ Epic mail is therefore designed to bridge the two technologies by being an app t
 
 ## Features.
 
-- Users can create an account and log in
+- Users can create an account and log in.
 - Users can create groups.
 - Users can send a message to individuals.
 - Users can view their inbox and read messages.
@@ -23,7 +23,7 @@ These instructions will get you a copy of the project up and running on your loc
 You need to have the following installed onto your local machine
 
 ```
-Code Editor forexample vscode
+Code Editor forexample vscode.
 
 ```
 
