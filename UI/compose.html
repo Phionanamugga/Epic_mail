@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="images/epic_mail.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/home.js"></script>
 </head>
    
 <body>
@@ -22,7 +23,7 @@
 
             <ul class="nav">
                 <li class="nav-item avatar">
-                    <a  href="#"></a><img src="./images/avatar .png" alt="Avatar" class="avatar"></a>
+                    <a  href="#"></a><img src="./images/avatar .png"  onmousemove="profilePic()" alt="Avatar" class="avatar"></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link drop-btn" href="#">Fifi</a>
@@ -39,7 +40,7 @@
         <div id="side-nav" class="sidenav">
                 <div class="search">
                         <form action="/search.html">
-                            <input type="text" placeholder="Search.." name="search">
+                            <input type="text" placeholder="Search.." name="search" required>
                             <button type="submit"><i class="fa fa-search"></i></button>
                           </form>
                 </div>
@@ -52,7 +53,8 @@
         <section>
             <div class="select">
                 <select id="from">
-                    <option>From</option>
+                    <!--aria-required="true" type="email"-->
+                   <option>From</option>
                     <option>phionanamugga@gmail.com</option>
                     <option>phionamay@gmail.com</option>
                     
@@ -60,7 +62,7 @@
             </div>
 
             <div class="select2">
-                    <select id="to">
+                    <select id="to" required>
                         <option>To</option>
                         <option>phionanamugga@gmail.com</option>
                         <option>emilymirembe@gmail.com</option>
@@ -71,10 +73,10 @@
                 </div>
             </div>
             <div class="Subject">
-                <textarea id="textareaone" placeholder="Subject"></textarea>
+                <textarea id="textareaone" placeholder="Subject" required></textarea>
             </div> 
             <div class="ask">
-                <div class="description"><textarea id="textareatwo" placeholder="Write message"></textarea></div><br>
+                <div class="description"><textarea id="textareatwo" placeholder="Write message" required></textarea></div><br>
                         <button class="btn ask-btn" input type="submit">Send</button>
                 </div> 
             </div>

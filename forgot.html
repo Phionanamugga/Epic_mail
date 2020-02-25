@@ -6,7 +6,7 @@
     <title>Epic_mail | Forgot_password</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="UI/css/forgot.css" />
-    <script src="/UI/JS/forgot.js"></script>
+    <script src="UI/js/forgot.js"></script>
 </head>
    
 <body>
@@ -16,9 +16,9 @@
           </div>
             <form action="">
                 <div class="input_container">
-                    <input type="email" name="email" id="email" placeholder="Enter email" pattern="^[A-Za-z._%+-]+@[A-Za-z.-]+\.[A-Za-z]{2,4}$" class="input email" required>
+                    <input type="email" name="email" placeholder="Enter email" pattern="^[A-Za-z._%+-]+@[A-Za-z.-]+\.[A-Za-z]{2,4}$" class="input email">
                 </div>
-                    <a href=""><button onclick="alert('Check email for password reset link!')" class="btn login" id="reset">Submit</button></a>
+                    <a href=""><button onclick="validateEmail(form)" class="btn login" id="reset">Submit</button></a>
                 </div>
             </form>
       </div>

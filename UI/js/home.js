@@ -1,4 +1,4 @@
-var reply_btn = document.getElementById("reply");
+/*var reply_btn = document.getElementById("reply");
 reply_btn.addEventListener('click',function(e){
     e.target.setAttribute('style','display:none');
     document.getElementById("comment-dropdown").setAttribute('style','display:block');
@@ -76,3 +76,39 @@ send6_btn.addEventListener('click',function(e){
     document.getElementById("textareatwo6").setAttribute('style','display:none');
     document.getElementById("reply6").setAttribute('style','display:block');
 });
+*/
+
+
+function openReplyWindow() {
+    document.getElementById("myReply").style.display = "block";
+  }
+  
+function closeReplyWindow() {
+    document.getElementById("myReply").style.display = "none";
+  }
+
+function deleteMessage() {
+    alert("Message has been deleted!");
+    //hides chat window on delete
+    document.getElementById("myReply").style.display = "none";
+  }
+
+//var message ="You can add or change profile pic";
+function profilePic(){
+    // document.getElementById("profilepic").alert = (message);
+    alert("You can add or change profile pic");
+    
+
+}
+
+var msg;
+function search_field(){
+    document.getElementById("Search");
+    if(msg == "");
+    return( "No input!");
+
+}
+
+function retractMessage() {
+    alert("Message has been retracted!");
+  }

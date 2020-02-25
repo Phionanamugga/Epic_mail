@@ -10,6 +10,8 @@
     <link rel="shortcut icon" type="image/png" href="images/epic_mail.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/home.js"></script>
+    <script src="js/sent.js"></script>
 </head>
    
 <body>
@@ -22,7 +24,7 @@
 
             <ul class="nav">
                 <li class="nav-item avatar">
-                    <a  href="#"></a><img src="./images/avatar .png" alt="Avatar" class="avatar"></a>
+                    <a  href="#"></a><img src="./images/avatar .png" onmousemove="profilePic()" alt="Avatar" class="avatar"></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link drop-btn" href="#">Fifi</a>
@@ -35,11 +37,11 @@
             </nav>
         </div>
         </header>
-    <button onclick="side()" class="btn side-btn"><img class="side-menu icon" src="images/menu.png" alt="menu"></button>
+    <button class="btn side-btn"><img class="side-menu icon" src="images/menu.png" alt="menu"></button>
         <div id="side-nav" class="sidenav">
             <div class="search">
                 <form action="/search.html">
-                    <input type="text" placeholder="Search.." name="search">
+                    <input type="text" placeholder="Search.." name="search" required>
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -59,7 +61,7 @@
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button class="btn comment-btn">Send</button>
+                        <button class="btn comment-btn" onclick="sent_message()">Send</button>
                     </span>
                     <span class="dropdown-comment">
                         <button onclick="drop()" class="btn more-btn">Edit</button>
@@ -69,7 +71,7 @@
                         </div>
                     </span>
                     <span class="dropdown-comment">
-                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                        <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                     </span>
                    
                 </div>
@@ -82,7 +84,7 @@
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button class="btn comment-btn">Send</button>
+                        <button class="btn comment-btn" onclick="sent_message()">Send</button>
                     </span>
                     <span class="dropdown-comment">
                         <button onclick="drop()" class="btn more-btn">Edit</button>
@@ -96,7 +98,7 @@
                         </div>
                     </span>
                         <span class="dropdown-comment">
-                            <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                            <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                         </span>
                    
                    
@@ -104,23 +106,23 @@
             </div>
             <div class="container3">
                 <div class="question">
-                    <p>How Matha, will you be able to attend Cate's wedding?</p>
+                    <p>Hi Matha, will you be able to attend Cate's wedding?</p>
                     <span class="qn-details">
                         <small class="username"><b>Joy</b></small>
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button class="btn comment-btn">Send</button>
+                        <button class="btn comment-btn" onclick="sent_message()">Send</button>
                     </span>
                     <span class="dropdown-comment">
                         <button onclick="drop()" class="btn more-btn">Edit</button>
                         <div id="comment-dropdown" class="dropdown-contents">
-                            <textarea name="comment" id="" cols="30" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
-                            <button class="btn comment-btn">Send</button>
+                            <textarea name="comment" cols="30" rows="5" placeholder="Comment..." maxlength="140" required></textarea><br>
+                            <button class="btn comment-btn" onclick="closeReplyWindow()">Send</button>
                         </div>
                     </span>
                     <span class="dropdown-comment">
-                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                        <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                     </span>
                 </div>
             </div>
@@ -132,17 +134,14 @@
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button class="btn comment-btn">Send</button>
+                        <button class="btn comment-btn" onclick="sent_message()">Send</button>
                     </span>
                     <span class="dropdown-comment">
                         <button onclick="drop()" class="btn more-btn">Edit</button>
-                        <div id="comment-dropdown" class="dropdown-contents">
-                            <textarea name="comment" id="" cols="30" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
-                            <button class="btn comment-btn">Send</button>
-                        </div>
+                      
                     </span>
                     <span class="dropdown-comment">
-                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                        <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                     </span>
                 </div>
             </div>
@@ -158,13 +157,12 @@
                     </span>
                     <span class="dropdown-comment">
                         <button onclick="drop()" class="btn more-btn">Edit</button>
-                        <div id="comment-dropdown" class="dropdown-contents">
-                            <textarea name="comment" id="" cols="30" rows="5" placeholder="Comment..." maxlength="140"></textarea><br>
-                            <button class="btn comment-btn">Send</button>
+                        </div><br>
+                            <button class="btn comment-btn" onclick="sent_message()">Send</button>
                         </div>
                     </span>
                     <span class="dropdown-comment">
-                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                        <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                     </span>
                   
                 </div>

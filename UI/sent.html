@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="images/epic_mail.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/home.js"></script>
 </head>
    
 <body>
@@ -22,7 +23,8 @@
 
             <ul class="nav">
                 <li class="nav-item avatar">
-                    <a  href="#"></a><img src="./images/avatar .png" alt="Avatar" class="avatar"></a>
+                    <!--accept="file_extension|image/*" type="file"-->
+                    <a  href="#"></a><img src="./images/avatar .png" alt="Avatar" class="avatar" onmousemove="profilePic()"></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link drop-btn" href="#">Fifi</a>
@@ -39,7 +41,7 @@
         <div id="side-nav" class="sidenav">
                 <div class="search">
                         <form action="/search.html">
-                            <input type="text" placeholder="Search.." name="search">
+                            <input type="text" placeholder="Search.." name="search" required>
                             <button type="submit"><i class="fa fa-search"></i></button>
                           </form>
                 </div>
@@ -59,11 +61,11 @@
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button  class="btn more-btn">Retract</button>
+                        <button  class="btn more-btn" onclick="retractMessage()">Retract</button>
                     </span>
                     
                     <span class="dropdown-comment">
-                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                        <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                     </span>
                    
                 </div>
@@ -76,9 +78,9 @@
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button class="btn more-btn">Retract</button>
+                        <button class="btn more-btn" onclick="retractMessage()">Retract</button>
                         <span class="dropdown-comment">
-                            <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                            <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                         </span>
                     </span>
                    
@@ -92,9 +94,9 @@
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button onclick="drop()" class="btn more-btn">Retract</button>
+                        <button class="btn more-btn" onclick="retractMessage()">Retract</button>
                     <span class="dropdown-comment">
-                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                        <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                     </span>
                 </div>
             </div>
@@ -106,10 +108,10 @@
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button onclick="drop()" class="btn more-btn">Retract</button>
+                        <button class="btn more-btn" onclick="retractMessage()">Retract</button>
                     </span>
                     <span class="dropdown-comment">
-                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                        <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                     </span>
                 </div>
             </div>
@@ -121,9 +123,9 @@
                         <small class="date">14/03/2019 17:45</small>
                     </span><br><br>
                     <span class="dropdown-comment">
-                        <button onclick="drop()" class="btn more-btn">Retract</button>
+                        <button class="btn more-btn" onclick="retractMessage()">Retract</button>
                     <span class="dropdown-comment">
-                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                        <button class="btn dislike drop" onclick="deleteMessage()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                     </span>
                 </div>
             </div>

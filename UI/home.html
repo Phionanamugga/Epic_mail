@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="images/epic_mail.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/home.js"></script>
 </head>
    
 <body>
@@ -21,7 +22,7 @@
 
             <ul class="nav">
                 <li class="nav-item avatar">
-                    <a  href="#"></a><img src="./images/avatar .png" alt="Avatar" class="avatar"></a>
+                    <a  href="#"></a><img src="./images/avatar .png" onmousemove="profilePic()" alt="Avatar" class="avatar" id="profilepic"></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link drop-btn" href="#">Fifi</a>
@@ -37,8 +38,8 @@
         <div class="sidenav">
             <div class="search">
                 <form action="/search.html">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" id="Search" placeholder="Search.." name="search" required>
+                    <button type="submit" onclick="search_field()"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <a href="home.html">Inbox</a>
@@ -51,21 +52,28 @@
             <div class="section">
                 <div class="container1">
                    <div class="question" id="question1">
-                        <p>Hallo Matha, will you be able to attend Cate's wedding?</p>
+                        <p id="hello">Hallo Matha, will you be able to attend Cate's wedding?</p>
                         <span class="qn-details">
                             <small class="username"><b>Joy</b></small>
                             <small class="date1">14/03/2019 17:45</small>
                         </span><br><br>
                                 <span class="dropdown-comment">
-                                    <button class="btn more-btn reply" id="reply">Reply</button>
-                                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
-                                        </span>
-                                    <div id="comment-dropdown" class="dropdown-contents" >
-                                        <span>
-                                        </span><br><br>
-                                        <div class="description"><textarea id="textareatwo" placeholder="Reply..."></textarea></div><br>
-                                        <button class="btn comment-btn" id="send">Send</button>
+                                    <button class="btn more-btn reply" onclick="openReplyWindow()" id="reply">Reply</button>
+                                    <div class="chat-popup" id="myReply">
+                                        <form class="form-container">
+                                          <h1>Chat</h1>
+                                          <label for="msg"><b>Message</b></label>
+                                          <textarea placeholder="Type message.." name="msg" required></textarea>
+                                          <button type="submit" class="btn">Send</button>
+                                          <button type="button" class="btn cancel" onclick="closeReplyWindow()">Close</button>
+                                        </form>
                                     </div>
+                                    <button class="btn dislike drop" id="myReply" onclick="deleteMessage()" onclick="closeReplyWindow()"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                                    <!--<div class="message-delete" id="delete_message">
+                                        <p><h4>Are you sure you want to delete message?</h4></p>
+                                        <button class="yes">Yes</button>
+                                        <button class="no">No</button>
+                                    </div>-->    
                                 </span>
                     </div>
                 </div>      
@@ -79,8 +87,17 @@
                             <small class="date">14/03/2019 17:45</small>
                             </span><br><br>
                             <span class="dropdown-comment">
-                            <button onclick="drop2()" class="btn more-btn reply2" id="reply2">Reply</button>
-                            <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                            <button class="btn more-btn reply2" onclick="openReplyWindow()" id="reply2">Reply</button>
+                            <div class="chat-popup" id="myReply">
+                                <form class="form-container">
+                                  <h1>Chat</h1>
+                                  <label for="msg"><b>Message</b></label>
+                                  <textarea placeholder="Type message.." name="msg" required></textarea>
+                                  <button type="submit" class="btn">Send</button>
+                                  <button type="button" class="btn cancel" onclick="closeReplyWindow()">Close</button>
+                                </form>
+                            </div>
+                            <button class="btn dislike drop" onclick="deleteMessage()" onclick="closeReplyWindow()" id="myReply"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                                 <div id="comment-dropdown2" class="dropdown-contents">
                                 <span>
                                 <p class="answer">Yah, I have a similar question</p>
@@ -101,8 +118,17 @@
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
-                                        <button onclick="drop()" class="btn more-btn" id="reply3" >Reply</button>
-                                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                                        <button onclick="openReplyWindow()" class="btn more-btn" id="reply3" >Reply</button>
+                                        <div class="chat-popup" id="myReply">
+                                            <form class="form-container">
+                                              <h1>Chat</h1>
+                                              <label for="msg"><b>Message</b></label>
+                                              <textarea placeholder="Type message.." name="msg" required></textarea>
+                                              <button type="submit" class="btn">Send</button>
+                                              <button type="button" class="btn cancel" onclick="closeReplyWindow()">Close</button>
+                                            </form>
+                                        </div>
+                                        <button class="btn dislike drop" onclick="deleteMessage()" onclick="closeReplyWindow()" id="myReply"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                                         <div id="comment-dropdown3" class="dropdown-contents">
                                             <div class="description"><textarea id="textareatwo3" placeholder="Reply..."></textarea></div><br>
                                             <button class="btn comment-btn" id="send3">Send</button>
@@ -119,8 +145,17 @@
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
-                                        <button onclick="drop()" class="btn more-btn" id="reply4">Reply</button>
-                                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                                        <button onclick="openReplyWindow()" class="btn more-btn" id="reply4">Reply</button>
+                                        <div class="chat-popup" id="myReply">
+                                            <form class="form-container">
+                                              <h1>Chat</h1>
+                                              <label for="msg"><b>Message</b></label>
+                                              <textarea placeholder="Type message.." name="msg" required></textarea>
+                                              <button type="submit" class="btn">Send</button>
+                                              <button type="button" class="btn cancel" onclick="closeReplyWindow()">Close</button>
+                                            </form>
+                                        </div>
+                                        <button class="btn dislike drop" onclick="deleteMessage()" onclick="closeReplyWindow()" id="myReply"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                                         <div id="comment-dropdown4" class="dropdown-contents">
                                             <div class="description"><textarea id="textareatwo4" placeholder="Reply..."></textarea></div><br>
                                             <button class="btn comment-btn" id="send4">Send</button>
@@ -137,8 +172,17 @@
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
-                                        <button onclick="drop()" class="btn more-btn" id="reply5">Reply</button>
-                                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                                        <button onclick="openReplyWindow()" class="btn more-btn" id="reply5">Reply</button>
+                                        <div class="chat-popup" id="myReply">
+                                            <form class="form-container">
+                                              <h1>Chat</h1>
+                                              <label for="msg"><b>Message</b></label>
+                                              <textarea placeholder="Type message.." name="msg" required></textarea>
+                                              <button type="submit" class="btn">Send</button>
+                                              <button type="button" class="btn cancel" onclick="closeReplyWindow()">Close</button>
+                                            </form>
+                                        </div>
+                                        <button class="btn dislike drop" onclick="deleteMessage()" onclick="closeReplyWindow()" id="myReply"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                                         <div id="comment-dropdown5" class="dropdown-contents">
                                             <div class="description"><textarea id="textareatwo5" placeholder="Reply..."></textarea></div><br>
                                             <button class="btn comment-btn" id="send5">Send</button>
@@ -155,8 +199,17 @@
                                         <small class="date">14/03/2019 17:45</small>
                                     </span><br><br>
                                     <span class="dropdown-comment">
-                                        <button onclick="drop()" class="btn more-btn" id="reply6">Reply</button>
-                                        <button class="btn dislike drop"><img class="icon" src="images/trash-can.png" alt="comment"></button>
+                                        <button onclick="openReplyWindow()" class="btn more-btn" id="reply6">Reply</button>
+                                        <div class="chat-popup" id="myReply">
+                                            <form class="form-container">
+                                              <h1>Chat</h1>
+                                              <label for="msg"><b>Message</b></label>
+                                              <textarea placeholder="Type message.." name="msg" required></textarea>
+                                              <button type="submit" class="btn">Send</button>
+                                              <button type="button" class="btn cancel" onclick="closeReplyWindow()">Close</button>
+                                            </form>
+                                        </div>
+                                        <button class="btn dislike drop" onclick="deleteMessage()" onclick="closeReplyWindow()" id="myReply"><img class="icon" src="images/trash-can.png" alt="comment"></button>
                                         <div id="comment-dropdown6" class="dropdown-contents">
                                             <div class="description"><textarea id="textareatwo6" placeholder="Reply..."></textarea></div><br>
                                             <button class="btn comment-btn" id="send6">Send</button>
